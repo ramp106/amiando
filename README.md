@@ -19,7 +19,14 @@ Otherwise it will use `multi_json`'s bundled json parser.
 ## Basic usage
 
 The gem has been implemented with the idea that requests can be done in
-parallel using [Typhoeus](https://github.com/dbalatero/typhoeus).
+parallel using [Typhoeus](https://github.com/typhoeus/typhoeus).
+
+First the API key and base URL need to be configured properly:
+
+    Amiando.base_url = 'https://www.amiando.com'
+    Amiando.api_key = 'your API key'
+
+To get API key use this [link](http://developers.amiando.com/index.php/How_to_get_your_API_key).
 
 You can query multiple requests and run then like this:
 
