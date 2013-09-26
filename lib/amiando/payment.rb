@@ -6,13 +6,12 @@ module Amiando
     #
     # @param event_id
     #
-    def self.create(event_id)
-      object = Result.new do |response_body, result|
-        result.errors = response_body['errors']
-        response_body['id'] || false
-      end
+    def self.create(event_id, attributes)
+      object = new
 
-      post object, "api/event/#{event_id}/payment/create", :params => { }
+      post object, "api/event/#{event_id}/payment/create",
+        :params => attributes,
+        :populate_method => :populate_create
 
       object
     end
@@ -27,7 +26,7 @@ module Amiando
     def self.find(payment_id)
       object = new
       get object, "api/payment/#{payment_id}"
-
+      puts object.inspect
       object
     end
 

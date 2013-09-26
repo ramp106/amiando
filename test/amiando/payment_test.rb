@@ -13,22 +13,23 @@ describe Amiando::Payment do
 
   describe 'find' do
     it 'finds a payment given the id' do
-      payment_id = Amiando::Payment.sync_create(event.id).result
+      original = Amiando::Payment.sync_create(event.id, {})
 
-      payment = Amiando::Payment.find(payment_id)
+      payment = Amiando::Payment.find(original.id)
       Amiando.run
 
-      payment.id.must_equal payment_id
+      payment.id.must_equal original.id
     end
   end
 
   describe 'create' do
     it 'creates a payment given valid attributes' do
-      payment = Amiando::Payment.create(event.id)
+      payment = Amiando::Payment.create(event.id, {})
 
       Amiando.run
 
-      payment.result.wont_be_nil
+      payment.id.wont_be_nil
+      payment.success.must_equal true
     end
 
   end
