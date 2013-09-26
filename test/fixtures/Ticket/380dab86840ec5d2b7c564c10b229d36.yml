@@ -1,0 +1,51 @@
+--- !ruby/object:Typhoeus::Response
+app_connect_time: 0.231164
+body: '{"id":51818008,"success":true}'
+code: 201
+connect_time: 0.111271
+curl_error_message: No error
+curl_return_code: 0
+effective_url: https://test.amiando.com/api/event/create?format=json&version=1&apikey=qjphdq7wWaGQRfjA2xmZAyekT9iehhS75q8DVhrMLsYaYTXlOE
+first_header_line: "HTTP/1.1 201 Created\r"
+headers: "HTTP/1.1 201 Created\r\nDate: Thu, 26 Sep 2013 15:31:21 GMT\r\nServer: Apache/2.2.22
+  (Ubuntu)\r\naccept-charset: utf-8\r\nP3P: policyref=\"/w3c/p3p.xml\", CP=\"CAO DSP
+  COR CUR ADM DEV TAI PSA PSD CON OUR IND UNI PUR COM CNT\"\r\nAccess-Control-Allow-Origin:
+  *\r\nAccess-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT\r\nAccept-Ranges:
+  bytes\r\nVary: Accept-Encoding\r\nContent-Encoding: gzip\r\nContent-Length: 50\r\nContent-Type:
+  application/json;charset=UTF-8\r\nSet-Cookie: JSESSIONID=51013F626700F4CB4C47CA546D025B3E.amiando;
+  Path=/; Secure; HttpOnly\r\nSet-Cookie: JSESSIONID=51013F626700F4CB4C47CA546D025B3E.amiando;
+  Path=/\r\nSet-Cookie: ANONYMOUS_HASHED_REMEMBER_ME_COOKIE_KEY=dHNwZWRwSFltMkZ3dDhYdzoxMzgxNDE5MDgxNTAyOjY2OTllYzVjYTYxNDEzMTZjYjA0ZDZkZGEwODE4Y2Vh;
+  Expires=Tue, 25-Sep-2018 15:31:21 GMT; Path=/\r\nConnection: close\r\n\r\n"
+headers_hash: !ruby/hash:Typhoeus::Header
+  Date: Thu, 26 Sep 2013 15:31:21 GMT
+  Server: Apache/2.2.22 (Ubuntu)
+  Accept-Charset: utf-8
+  P3p: policyref="/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV TAI PSA PSD CON OUR IND
+    UNI PUR COM CNT"
+  Access-Control-Allow-Origin: '*'
+  Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+  Accept-Ranges: bytes
+  Vary: Accept-Encoding
+  Content-Encoding: gzip
+  Content-Length: '50'
+  Content-Type: application/json;charset=UTF-8
+  Set-Cookie:
+  - JSESSIONID=51013F626700F4CB4C47CA546D025B3E.amiando; Path=/; Secure; HttpOnly
+  - JSESSIONID=51013F626700F4CB4C47CA546D025B3E.amiando; Path=/
+  - ANONYMOUS_HASHED_REMEMBER_ME_COOKIE_KEY=dHNwZWRwSFltMkZ3dDhYdzoxMzgxNDE5MDgxNTAyOjY2OTllYzVjYTYxNDEzMTZjYjA0ZDZkZGEwODE4Y2Vh;
+    Expires=Tue, 25-Sep-2018 15:31:21 GMT; Path=/
+  Connection: close
+http_version: 
+mock: false
+name_lookup_time: 0.061881
+pretransfer_time: 0.231558
+primary_ip: 213.61.176.214
+redirect_count: 0
+request: ":method => :post,\n\t:url => https://test.amiando.com/api/event/create?format=json&version=1&apikey=qjphdq7wWaGQRfjA2xmZAyekT9iehhS75q8DVhrMLsYaYTXlOE,\n\t:params
+  => {:hostId=>256615765, :title=>\"Secret title\", :country=>\"es\", :selectedDate=>\"1970-01-01T00:00:00Z\"}"
+requested_http_method: 
+requested_url: 
+start_time: 
+start_transfer_time: 1.741137
+status_message: Created
+time: 1.741815
