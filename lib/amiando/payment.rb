@@ -26,7 +26,6 @@ module Amiando
     def self.find(payment_id)
       object = new
       get object, "api/payment/#{payment_id}"
-      puts object.inspect
       object
     end
 
