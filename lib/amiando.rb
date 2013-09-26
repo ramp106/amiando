@@ -18,6 +18,7 @@ module Amiando
   autoload :User,           'amiando/user'
   autoload :Partner,        'amiando/partner'
   autoload :Event,          'amiando/event'
+  autoload :Ticket,         'amiando/ticket'
   autoload :TicketCategory, 'amiando/ticket_category'
   autoload :TicketShop,     'amiando/ticket_shop'
   autoload :Payment,        'amiando/payment'
