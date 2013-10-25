@@ -28,6 +28,20 @@ module Amiando
       object
     end
 
+    ##
+    # Set ticket count
+    #
+    # @params payment_id
+    # @param [Hash] amount of tickets you want to buy for this ticket category. It is possible to set the ticket count for more than one ticket category in a single request.
+    #
+    # @return [Payment]
+
+    def self.set_ticket_count(payment_id, attributes)
+      object = Boolean.new('success')
+      post object, "api/payment/#{payment_id}/setTicketCount", :params => attributes
+      object
+    end
+
     protected
 
     def populate(response_body)

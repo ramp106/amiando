@@ -1,0 +1,56 @@
+--- !ruby/object:Typhoeus::Response
+app_connect_time: 0.081784
+body: ! '{"errors":["com.amiando.api.rest.MissingParam.hostId"],"success":false}'
+code: 400
+connect_time: 0.039786
+curl_error_message: !binary |-
+  Tm8gZXJyb3I=
+curl_return_code: 0
+effective_url: !binary |-
+  aHR0cHM6Ly90ZXN0LmFtaWFuZG8uY29tL2FwaS9ldmVudC9jcmVhdGU/Zm9y
+  bWF0PWpzb24mdmVyc2lvbj0xJmFwaWtleT1xanBoZHE3d1dhR1FSZmpBMnht
+  WkF5ZWtUOWllaGhTNzVxOERWaHJNTHNZYVlUWGxPRQ==
+first_header_line: ! "HTTP/1.1 400 Bad Request\r"
+headers: ! "HTTP/1.1 400 Bad Request\r\nDate: Fri, 25 Oct 2013 09:15:03 GMT\r\nServer:
+  Apache/2.2.22 (Ubuntu)\r\naccept-charset: utf-8\r\nP3P: policyref=\"/w3c/p3p.xml\",
+  CP=\"CAO DSP COR CUR ADM DEV TAI PSA PSD CON OUR IND UNI PUR COM CNT\"\r\nAccess-Control-Allow-Origin:
+  *\r\nAccess-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT\r\nAccept-Ranges:
+  bytes\r\nVary: Accept-Encoding\r\nContent-Encoding: gzip\r\nContent-Length: 90\r\nContent-Type:
+  application/json;charset=UTF-8\r\nSet-Cookie: JSESSIONID=78874D1F9585403C172783998488993D.amiando;
+  Path=/; Secure; HttpOnly\r\nSet-Cookie: JSESSIONID=78874D1F9585403C172783998488993D.amiando;
+  Path=/\r\nSet-Cookie: ANONYMOUS_HASHED_REMEMBER_ME_COOKIE_KEY=aElpcHhHdE1mRjA0eG1LRjoxMzgzOTAyMTAzNjgyOjdlYzM2MGRlMmFmYWQwN2U2NGFmNDlmNjc2MDU0MzNk;
+  Expires=Wed, 24-Oct-2018 09:15:03 GMT; Path=/\r\nConnection: close\r\n\r\n"
+headers_hash: !ruby/hash:Typhoeus::Header
+  Date: Fri, 25 Oct 2013 09:15:03 GMT
+  Server: Apache/2.2.22 (Ubuntu)
+  Accept-Charset: utf-8
+  P3p: policyref="/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV TAI PSA PSD CON OUR IND
+    UNI PUR COM CNT"
+  Access-Control-Allow-Origin: ! '*'
+  Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+  Accept-Ranges: bytes
+  Vary: Accept-Encoding
+  Content-Encoding: gzip
+  Content-Length: '90'
+  Content-Type: application/json;charset=UTF-8
+  Set-Cookie:
+  - JSESSIONID=78874D1F9585403C172783998488993D.amiando; Path=/; Secure; HttpOnly
+  - JSESSIONID=78874D1F9585403C172783998488993D.amiando; Path=/
+  - ANONYMOUS_HASHED_REMEMBER_ME_COOKIE_KEY=aElpcHhHdE1mRjA0eG1LRjoxMzgzOTAyMTAzNjgyOjdlYzM2MGRlMmFmYWQwN2U2NGFmNDlmNjc2MDU0MzNk;
+    Expires=Wed, 24-Oct-2018 09:15:03 GMT; Path=/
+  Connection: close
+http_version: 
+mock: false
+name_lookup_time: 2.4e-05
+pretransfer_time: 0.082154
+primary_ip: !binary |-
+  MjEzLjYxLjE3Ni4yMTQ=
+redirect_count: 0
+request: ":method => :post,\n\t:url => https://test.amiando.com/api/event/create?format=json&version=1&apikey=qjphdq7wWaGQRfjA2xmZAyekT9iehhS75q8DVhrMLsYaYTXlOE,\n\t:params
+  => {:host_id=>nil, :title=>\"Secret title\", :country=>\"es\", :selected_date=>\"1970-01-01T00:00:00Z\"}"
+requested_http_method: 
+requested_url: 
+start_time: 
+start_transfer_time: 0.248677
+status_message: Bad Request
+time: 0.249571

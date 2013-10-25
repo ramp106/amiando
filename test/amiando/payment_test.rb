@@ -34,4 +34,16 @@ describe Amiando::Payment do
 
   end
 
+  describe 'set_ticket_count' do
+    it 'set ticket count' do
+      ticket_category = Amiando::Factory.create(:ticket_category)
+      payment = Amiando::Payment.sync_create(event.id, {})
+      result = Amiando::Payment.set_ticket_count(payment.id, {ticket_category.id => 1})
+
+      Amiando.run
+
+      result.success.must_equal true
+    end
+  end
+
 end
