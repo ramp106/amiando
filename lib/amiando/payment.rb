@@ -16,7 +16,6 @@ module Amiando
       object
     end
 
-
     ##
     # Find a Payment
     #

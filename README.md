@@ -47,6 +47,17 @@ All attributes should be used in snake_case format instead of the CamelCase
 used in the official documentation. For example, for a user, you should call
 first_name instead of firstName.
 
+### Pro-Tips
+
+In case of such error when you try to run tests:
+
+    webmock-1.7.10/lib/webmock/http_lib_adapters/typhoeus_hydra_adapter.rb:167:in `alias_method': undefined method `queue' for class `Typhoeus::Hydra' (NameError)
+
+probably you need to install:
+
+    libcurl
+
+
 ## Documentation
 
 The full amiando API isn't fully implemented yet, however you can find here the

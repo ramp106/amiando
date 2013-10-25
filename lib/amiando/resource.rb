@@ -22,6 +22,7 @@ module Amiando
       private
 
       def do_request(object, verb, path, options = {})
+        populate_method = options.delete(:populate_method) || :populate
         options = options.merge Amiando.default_options if Amiando.default_options 
         req = Request.new(object, verb, path, map_params(options[:params] || {}), options)
         object.request = req
@@ -54,7 +55,7 @@ module Amiando
           end
 
           object.response = response
-          object.send(options[:populate_method] || :populate, parsed_body)
+          object.send(populate_method, parsed_body)
         end
 
         Amiando.requests << req
