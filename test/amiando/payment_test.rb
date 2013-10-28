@@ -1,4 +1,5 @@
 require 'test_helper'
+require 'cgi'
 
 describe Amiando::Payment do
   before do
@@ -43,6 +44,21 @@ describe Amiando::Payment do
       Amiando.run
 
       result.success.must_equal true
+    end
+  end
+
+  describe 'start_payment' do
+    it 'start payment' do
+      payment = Amiando::Payment.sync_create(event.id, {})
+      start_payment = Amiando::Payment.start_payment(payment.id)
+
+      Amiando.run
+
+      parsed_query = CGI.parse(URI.parse(start_payment.result.start_url).query)
+
+      start_payment.result.start_url.wont_be_nil
+      start_payment.result.start_identifier.must_equal parsed_query["startIdentifier"][0]
+      start_payment.result.queue_identifier.must_equal parsed_query["queueIdentifier"][0]
     end
   end
 

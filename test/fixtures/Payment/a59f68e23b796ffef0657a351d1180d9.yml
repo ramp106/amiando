@@ -1,0 +1,55 @@
+--- !ruby/object:Typhoeus::Response
+app_connect_time: 0.078024
+body: ! '{"startIdentifier":"99Cbbic8ox2cIhOr","startUrl":"https://de.pub-test.ostack.muc.amiando.local/OKRRXRE.html?startIdentifier=99Cbbic8ox2cIhOr&queueIdentifier=550d7e2b-6f2f-4c91-8736-b767bee19b84&viewType=iframe","queueIdentifier":"550d7e2b-6f2f-4c91-8736-b767bee19b84","success":true}'
+code: 200
+connect_time: 0.037118
+curl_error_message: !binary |-
+  Tm8gZXJyb3I=
+curl_return_code: 0
+effective_url: !binary |-
+  aHR0cHM6Ly90ZXN0LmFtaWFuZG8uY29tL2FwaS9wYXltZW50Lzg4NzU0Mi9z
+  dGFydD9mb3JtYXQ9anNvbiZ2ZXJzaW9uPTEmYXBpa2V5PXFqcGhkcTd3V2FH
+  UVJmakEyeG1aQXlla1Q5aWVoaFM3NXE4RFZock1Mc1lhWVRYbE9F
+first_header_line: ! "HTTP/1.1 200 OK\r"
+headers: ! "HTTP/1.1 200 OK\r\nDate: Mon, 28 Oct 2013 08:54:22 GMT\r\nServer: Apache/2.2.22
+  (Ubuntu)\r\naccept-charset: utf-8\r\nP3P: policyref=\"/w3c/p3p.xml\", CP=\"CAO DSP
+  COR CUR ADM DEV TAI PSA PSD CON OUR IND UNI PUR COM CNT\"\r\nAccess-Control-Allow-Origin:
+  *\r\nAccess-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT\r\nAccept-Ranges:
+  bytes\r\nVary: Accept-Encoding\r\nContent-Encoding: gzip\r\nContent-Length: 200\r\nContent-Type:
+  application/json;charset=UTF-8\r\nSet-Cookie: JSESSIONID=C32DB35A210F6FA656088C929030E5BE.amiando;
+  Path=/; Secure; HttpOnly\r\nSet-Cookie: JSESSIONID=C32DB35A210F6FA656088C929030E5BE.amiando;
+  Path=/\r\nSet-Cookie: ANONYMOUS_HASHED_REMEMBER_ME_COOKIE_KEY=dGZiNHQxYlVjeU9DZGpuQToxMzg0MTYwMDYyMzI2OmUzMjYwZDNhNGYwY2ZhMjZiYmY0OWVjZWZkYzkzMmZi;
+  Expires=Sat, 27-Oct-2018 08:54:22 GMT; Path=/\r\nConnection: close\r\n\r\n"
+headers_hash: !ruby/hash:Typhoeus::Header
+  Date: Mon, 28 Oct 2013 08:54:22 GMT
+  Server: Apache/2.2.22 (Ubuntu)
+  Accept-Charset: utf-8
+  P3p: policyref="/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV TAI PSA PSD CON OUR IND
+    UNI PUR COM CNT"
+  Access-Control-Allow-Origin: ! '*'
+  Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+  Accept-Ranges: bytes
+  Vary: Accept-Encoding
+  Content-Encoding: gzip
+  Content-Length: '200'
+  Content-Type: application/json;charset=UTF-8
+  Set-Cookie:
+  - JSESSIONID=C32DB35A210F6FA656088C929030E5BE.amiando; Path=/; Secure; HttpOnly
+  - JSESSIONID=C32DB35A210F6FA656088C929030E5BE.amiando; Path=/
+  - ANONYMOUS_HASHED_REMEMBER_ME_COOKIE_KEY=dGZiNHQxYlVjeU9DZGpuQToxMzg0MTYwMDYyMzI2OmUzMjYwZDNhNGYwY2ZhMjZiYmY0OWVjZWZkYzkzMmZi;
+    Expires=Sat, 27-Oct-2018 08:54:22 GMT; Path=/
+  Connection: close
+http_version: 
+mock: false
+name_lookup_time: 2.1e-05
+pretransfer_time: 0.078127
+primary_ip: !binary |-
+  MjEzLjYxLjE3Ni4yMTQ=
+redirect_count: 0
+request: ":method => :post,\n\t:url => https://test.amiando.com/api/payment/887542/start?format=json&version=1&apikey=qjphdq7wWaGQRfjA2xmZAyekT9iehhS75q8DVhrMLsYaYTXlOE"
+requested_http_method: 
+requested_url: 
+start_time: 
+start_transfer_time: 0.33464700000000003
+status_message: OK
+time: 0.33559799999999995

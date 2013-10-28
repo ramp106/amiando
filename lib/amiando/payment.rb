@@ -42,6 +42,30 @@ module Amiando
       object
     end
 
+    ##
+    # Start payemnt
+    #
+    # @params payment_id
+    #
+    # @return {"startIdentifier":"<start id>","startUrl":"<url to start the payment process>","queueIdentifier":"<queue id>","success":true}
+
+    def self.start_payment(payment_id)
+      object = Result.new do |response_body, result|
+        if response_body['success']
+          OpenStruct.new(
+            :start_identifier => response_body['startIdentifier'],
+            :start_url => response_body['startUrl'],
+            :queue_identifier => response_body['queueIdentifier']
+          )
+        else
+          result.errors = response_body['errors']
+          false
+        end
+      end
+      post object, "/api/payment/#{payment_id}/start"
+      object
+    end
+
     def populate_create(response_body)
       super
       if response_body["payment"].is_a? Hash
