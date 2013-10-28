@@ -34,4 +34,29 @@ describe Amiando::Payment do
 
   end
 
+  describe 'set_ticket_count' do
+    it 'set ticket count' do
+      ticket_category = Amiando::Factory.create(:ticket_category)
+      payment = Amiando::Payment.sync_create(event.id, {})
+      result = Amiando::Payment.set_ticket_count(payment.id, {ticket_category.id => 1})
+
+      Amiando.run
+
+      result.success.must_equal true
+    end
+  end
+
+  describe 'populate_create' do
+    let(:payment) { Amiando::Payment.new }
+
+    it 'set application_data' do
+      payment.populate_create({"payment" => {"applicationData" => "test data"}})
+      payment.application_data.must_equal "test data"
+    end
+
+    it 'do not set application_data' do
+      payment.populate_create({})
+      payment.respond_to?(:application_data).must_equal false
+    end
+  end
 end
