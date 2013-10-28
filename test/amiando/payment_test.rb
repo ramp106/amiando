@@ -46,6 +46,17 @@ describe Amiando::Payment do
     end
   end
 
+  describe 'start_payment' do
+    it 'start payment' do
+      payment = Amiando::Payment.sync_create(event.id, {})
+      result = Amiando::Payment.sync_start_payment(payment.id).result
+
+      result.start_identifier.must_equal "99Cbbic8ox2cIhOr"
+      result.start_url.must_equal "https://de.pub-test.ostack.muc.amiando.local/OKRRXRE.html?startIdentifier=99Cbbic8ox2cIhOr&queueIdentifier=550d7e2b-6f2f-4c91-8736-b767bee19b84&viewType=iframe"
+      result.queue_identifier.must_equal "550d7e2b-6f2f-4c91-8736-b767bee19b84"
+    end
+  end
+
   describe 'populate_create' do
     let(:payment) { Amiando::Payment.new }
 
