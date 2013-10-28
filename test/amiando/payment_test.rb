@@ -55,7 +55,7 @@ describe Amiando::Payment do
     end
 
     it 'do not set application_data' do
-      payment.populate_create({"payment" => "invalid data"})
+      payment.populate_create({})
       payment.respond_to?(:application_data).must_equal false
     end
   end

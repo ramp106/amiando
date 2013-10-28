@@ -44,7 +44,7 @@ module Amiando
 
     def populate_create(response_body)
       super
-      if response_body["payment"] and response_body["payment"].is_a? Hash
+      if response_body["payment"].is_a? Hash
         @attributes[:application_data] = response_body["payment"]["applicationData"]
       end
     end
