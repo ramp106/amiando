@@ -1,4 +1,5 @@
 require 'test_helper'
+require 'cgi'
 
 describe Amiando::Payment do
   before do
@@ -49,11 +50,15 @@ describe Amiando::Payment do
   describe 'start_payment' do
     it 'start payment' do
       payment = Amiando::Payment.sync_create(event.id, {})
-      result = Amiando::Payment.sync_start_payment(payment.id).result
+      start_payment = Amiando::Payment.start_payment(payment.id)
 
-      result.start_identifier.must_equal "99Cbbic8ox2cIhOr"
-      result.start_url.must_equal "https://de.pub-test.ostack.muc.amiando.local/OKRRXRE.html?startIdentifier=99Cbbic8ox2cIhOr&queueIdentifier=550d7e2b-6f2f-4c91-8736-b767bee19b84&viewType=iframe"
-      result.queue_identifier.must_equal "550d7e2b-6f2f-4c91-8736-b767bee19b84"
+      Amiando.run
+
+      parsed_query = CGI.parse(URI.parse(start_payment.result.start_url).query)
+
+      start_payment.result.start_url.wont_be_nil
+      start_payment.result.start_identifier.must_equal parsed_query["startIdentifier"][0]
+      start_payment.result.queue_identifier.must_equal parsed_query["queueIdentifier"][0]
     end
   end
 
