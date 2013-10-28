@@ -66,6 +66,18 @@ module Amiando
       object
     end
 
+    ##
+    # This request will update the properties of the buyer address of the payment with the internal id <id>. Only properties which are provided as parameters will be updated.
+    #
+    # @params payment_id
+    # @params attributes
+
+    def self.fill_in_buyer_address(payment_id, attributes)
+      object = Boolean.new('success')
+      post object, "api/payment/#{payment_id}/address/buyer", :params => attributes
+      object
+    end
+
     def populate_create(response_body)
       super
       if response_body["payment"].is_a? Hash
