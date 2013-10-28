@@ -46,4 +46,17 @@ describe Amiando::Payment do
     end
   end
 
+  describe 'populate_create' do
+    let(:payment) { Amiando::Payment.new }
+
+    it 'set application_data' do
+      payment.populate_create({"payment" => {"applicationData" => "test data"}})
+      payment.application_data.must_equal "test data"
+    end
+
+    it 'do not set application_data' do
+      payment.populate_create({"payment" => "invalid data"})
+      payment.respond_to?(:application_data).must_equal false
+    end
+  end
 end
