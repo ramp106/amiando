@@ -1,0 +1,58 @@
+--- !ruby/object:Typhoeus::Response
+app_connect_time: 0.174187
+body: ! '{"success":true}'
+code: 200
+connect_time: 0.073669
+curl_error_message: !binary |-
+  Tm8gZXJyb3I=
+curl_return_code: 0
+effective_url: !binary |-
+  aHR0cHM6Ly90ZXN0LmFtaWFuZG8uY29tL2FwaS9wYXltZW50Lzg4NzU0Mi9h
+  ZGRyZXNzL2J1eWVyP2Zvcm1hdD1qc29uJnZlcnNpb249MSZhcGlrZXk9cWpw
+  aGRxN3dXYUdRUmZqQTJ4bVpBeWVrVDlpZWhoUzc1cThEVmhyTUxzWWFZVFhs
+  T0U=
+first_header_line: ! "HTTP/1.1 200 OK\r"
+headers: ! "HTTP/1.1 200 OK\r\nDate: Mon, 28 Oct 2013 11:24:33 GMT\r\nServer: Apache/2.2.22
+  (Ubuntu)\r\naccept-charset: utf-8\r\nP3P: policyref=\"/w3c/p3p.xml\", CP=\"CAO DSP
+  COR CUR ADM DEV TAI PSA PSD CON OUR IND UNI PUR COM CNT\"\r\nAccess-Control-Allow-Origin:
+  *\r\nAccess-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT\r\nAccept-Ranges:
+  bytes\r\nVary: Accept-Encoding\r\nContent-Encoding: gzip\r\nContent-Length: 36\r\nContent-Type:
+  application/json;charset=UTF-8\r\nSet-Cookie: JSESSIONID=D3B6DD0F14778497E2316201E2237F77.amiando;
+  Path=/; Secure; HttpOnly\r\nSet-Cookie: JSESSIONID=D3B6DD0F14778497E2316201E2237F77.amiando;
+  Path=/\r\nSet-Cookie: ANONYMOUS_HASHED_REMEMBER_ME_COOKIE_KEY=djJRN0RpenRGa1BxRlZ4MDoxMzg0MTY5MDczNjE5OjE5YTNkMGRjMjVjOWQyMjNiMzQ0YzcyMjI2MzQ1MjYx;
+  Expires=Sat, 27-Oct-2018 11:24:33 GMT; Path=/\r\nConnection: close\r\n\r\n"
+headers_hash: !ruby/hash:Typhoeus::Header
+  Date: Mon, 28 Oct 2013 11:24:33 GMT
+  Server: Apache/2.2.22 (Ubuntu)
+  Accept-Charset: utf-8
+  P3p: policyref="/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV TAI PSA PSD CON OUR IND
+    UNI PUR COM CNT"
+  Access-Control-Allow-Origin: ! '*'
+  Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+  Accept-Ranges: bytes
+  Vary: Accept-Encoding
+  Content-Encoding: gzip
+  Content-Length: '36'
+  Content-Type: application/json;charset=UTF-8
+  Set-Cookie:
+  - JSESSIONID=D3B6DD0F14778497E2316201E2237F77.amiando; Path=/; Secure; HttpOnly
+  - JSESSIONID=D3B6DD0F14778497E2316201E2237F77.amiando; Path=/
+  - ANONYMOUS_HASHED_REMEMBER_ME_COOKIE_KEY=djJRN0RpenRGa1BxRlZ4MDoxMzg0MTY5MDczNjE5OjE5YTNkMGRjMjVjOWQyMjNiMzQ0YzcyMjI2MzQ1MjYx;
+    Expires=Sat, 27-Oct-2018 11:24:33 GMT; Path=/
+  Connection: close
+http_version: 
+mock: false
+name_lookup_time: 0.030708
+pretransfer_time: 0.174278
+primary_ip: !binary |-
+  MjEzLjYxLjE3Ni4yMTQ=
+redirect_count: 0
+request: ":method => :post,\n\t:url => https://test.amiando.com/api/payment/887542/address/buyer?format=json&version=1&apikey=qjphdq7wWaGQRfjA2xmZAyekT9iehhS75q8DVhrMLsYaYTXlOE,\n\t:params
+  => {:email=>\"darwin@example.com\", :firstName=>\"Darwin\", :lastName=>\"Watterson\",
+  :street=>\"Honey Street\", :city=>\"Warsaw\", :zipCode=>\"01-234\", :country=>\"PL\"}"
+requested_http_method: 
+requested_url: 
+start_time: 
+start_transfer_time: 0.311612
+status_message: OK
+time: 0.312624

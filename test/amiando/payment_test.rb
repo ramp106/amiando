@@ -62,6 +62,26 @@ describe Amiando::Payment do
     end
   end
 
+  describe 'fill_in_buyer_address' do
+    it 'fill in buyer address' do
+      payment = Amiando::Payment.sync_create(event.id, {})
+      result = Amiando::Payment.fill_in_buyer_address(payment.id, {
+        email: "darwin@example.com",
+        first_name: "Darwin",
+        last_name: "Watterson",
+        street: "Honey Street",
+        city: "Warsaw",
+        zip_code: "01-234",
+        country: "PL"
+      })
+
+      Amiando.run
+
+      puts result.inspect
+      result.success.must_equal true
+    end
+  end
+
   describe 'populate_create' do
     let(:payment) { Amiando::Payment.new }
 
