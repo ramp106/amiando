@@ -28,4 +28,8 @@ describe Amiando::Ticket do
     end
   end
 
+  describe 'update' do
+    it 'updates the ticket' do
+    end
+  end
 end

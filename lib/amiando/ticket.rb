@@ -27,6 +27,20 @@ module Amiando
       object
     end
 
+    ##
+    # Updates a ticket.
+    #
+    # @param id
+    # @param [Hash] attributes
+    #
+    # @return [Result] if it was successful or not.
+    def self.update(id, attributes)
+      object = Result.new
+      post object, "/api/ticket/#{id}", :params => attributes
+
+      object
+    end
+
     protected
 
     def populate(response_body)
