@@ -41,6 +41,20 @@ module Amiando
       object
     end
 
+    ##
+    # Set user data
+    #
+    # @params ticket_id
+    # @param [Hash] You have to send an existing <userFieldId> with the volitional value. To get the existing userDataFields you should have a look at the REST_API_Events. You could set serveral userDataFileds with one Call by separating the parameters with an "&" (e.g. <userFieldId>=foo&<otherUserFieldId>=bar).
+    #
+    # @return {"success": true}
+
+    def self.set_user_data(ticket_id, user_data)
+      object = Boolean.new('success')
+      post object, "api/ticket/#{ticket_id}/userData", :params => user_data
+      object
+    end
+
     protected
 
     def populate(response_body)
