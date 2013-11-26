@@ -16,7 +16,7 @@ module Amiando
 
           # OpenStruct.new(:ticket_types => ticket_types,
           #                :available_ticket_types => available)
-          OpenStruct.new(:user_data => response_body['results'])
+          OpenStruct.new(:tmp => response_body)
         else
           result.errors = response_body['errors']
           false
