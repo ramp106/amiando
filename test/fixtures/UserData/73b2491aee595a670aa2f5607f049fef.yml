@@ -1,0 +1,50 @@
+--- !ruby/object:Typhoeus::Response
+app_connect_time: 9.6e-05
+body: '{"userData":[],"success":true}'
+code: 200
+connect_time: 9.6e-05
+curl_error_message: No error
+curl_return_code: 0
+effective_url: https://test.amiando.com/api/event/51818139/userData?apikey=qjphdq7wWaGQRfjA2xmZAyekT9iehhS75q8DVhrMLsYaYTXlOE&format=json&version=1
+first_header_line: "HTTP/1.1 200 OK\r"
+headers: "HTTP/1.1 200 OK\r\nDate: Mon, 02 Dec 2013 16:29:30 GMT\r\nServer: Apache/2.2.22
+  (Ubuntu)\r\naccept-charset: utf-8\r\nP3P: policyref=\"/w3c/p3p.xml\", CP=\"CAO DSP
+  COR CUR ADM DEV TAI PSA PSD CON OUR IND UNI PUR COM CNT\"\r\nAccess-Control-Allow-Origin:
+  *\r\nAccess-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT\r\nVary: Accept-Charset,Accept-Encoding,Accept-Language,Accept\r\nAccept-Ranges:
+  bytes\r\nSet-Cookie: JSESSIONID=23647B1CEBC9E1E10A8E1F65F19D88A7.amiando; Path=/;
+  Secure; HttpOnly\r\nSet-Cookie: JSESSIONID=23647B1CEBC9E1E10A8E1F65F19D88A7.amiando;
+  Path=/\r\nSet-Cookie: ANONYMOUS_HASHED_REMEMBER_ME_COOKIE_KEY=SGxjNEt0RXVVY2ZmQk92QToxMzg3MjExMzcwMzc5OjQ0OGU5M2Y3NDNiOTEyNDhjNGZhYzViMzNmOTUzYjg0;
+  Expires=Sat, 01-Dec-2018 16:29:30 GMT; Path=/\r\nContent-Encoding: gzip\r\nContent-Length:
+  50\r\nContent-Type: application/json;charset=UTF-8\r\n\r\n"
+headers_hash: !ruby/hash:Typhoeus::Header
+  Date: Mon, 02 Dec 2013 16:29:30 GMT
+  Server: Apache/2.2.22 (Ubuntu)
+  Accept-Charset: utf-8
+  P3p: policyref="/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV TAI PSA PSD CON OUR IND
+    UNI PUR COM CNT"
+  Access-Control-Allow-Origin: '*'
+  Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+  Vary: Accept-Charset,Accept-Encoding,Accept-Language,Accept
+  Accept-Ranges: bytes
+  Set-Cookie:
+  - JSESSIONID=23647B1CEBC9E1E10A8E1F65F19D88A7.amiando; Path=/; Secure; HttpOnly
+  - JSESSIONID=23647B1CEBC9E1E10A8E1F65F19D88A7.amiando; Path=/
+  - ANONYMOUS_HASHED_REMEMBER_ME_COOKIE_KEY=SGxjNEt0RXVVY2ZmQk92QToxMzg3MjExMzcwMzc5OjQ0OGU5M2Y3NDNiOTEyNDhjNGZhYzViMzNmOTUzYjg0;
+    Expires=Sat, 01-Dec-2018 16:29:30 GMT; Path=/
+  Content-Encoding: gzip
+  Content-Length: '50'
+  Content-Type: application/json;charset=UTF-8
+http_version: 
+mock: false
+name_lookup_time: 9.6e-05
+pretransfer_time: 0.000277
+primary_ip: 213.61.176.214
+redirect_count: 0
+request: ":method => :get,\n\t:url => https://test.amiando.com/api/event/51818139/userData?apikey=qjphdq7wWaGQRfjA2xmZAyekT9iehhS75q8DVhrMLsYaYTXlOE&format=json&version=1,\n\t:params
+  => {:format=>:json, :version=>1, :apikey=>\"qjphdq7wWaGQRfjA2xmZAyekT9iehhS75q8DVhrMLsYaYTXlOE\"}"
+requested_http_method: 
+requested_url: 
+start_time: 
+start_transfer_time: 0.094335
+status_message: OK
+time: 0.094889

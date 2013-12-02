@@ -8,15 +8,7 @@ module Amiando
     def self.find_all_by_event_id(event_id)
       object = Result.new do |response_body, result|
         if response_body['success']
-          # ticket_types = response_body['results']['User'].map do |ticket_type|
-          #   new(ticket_type)
-          # end
-
-          # available = response_body['results']['availableTicketTypes']
-
-          # OpenStruct.new(:ticket_types => ticket_types,
-          #                :available_ticket_types => available)
-          OpenStruct.new(:tmp => response_body)
+          OpenStruct.new(:field_names => response_body['userData'])
         else
           result.errors = response_body['errors']
           false

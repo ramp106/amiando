@@ -1,0 +1,50 @@
+--- !ruby/object:Typhoeus::Response
+app_connect_time: 0.279289
+body: '{"id":51818139,"success":true}'
+code: 201
+connect_time: 0.09652
+curl_error_message: No error
+curl_return_code: 0
+effective_url: https://test.amiando.com/api/event/create?format=json&version=1&apikey=qjphdq7wWaGQRfjA2xmZAyekT9iehhS75q8DVhrMLsYaYTXlOE
+first_header_line: "HTTP/1.1 201 Created\r"
+headers: "HTTP/1.1 201 Created\r\nDate: Mon, 02 Dec 2013 16:29:29 GMT\r\nServer: Apache/2.2.22
+  (Ubuntu)\r\naccept-charset: utf-8\r\nP3P: policyref=\"/w3c/p3p.xml\", CP=\"CAO DSP
+  COR CUR ADM DEV TAI PSA PSD CON OUR IND UNI PUR COM CNT\"\r\nAccess-Control-Allow-Origin:
+  *\r\nAccess-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT\r\nAccept-Ranges:
+  bytes\r\nSet-Cookie: JSESSIONID=63C97D7E26894302DE042BD4996C3889.amiando; Path=/;
+  Secure; HttpOnly\r\nSet-Cookie: JSESSIONID=63C97D7E26894302DE042BD4996C3889.amiando;
+  Path=/\r\nSet-Cookie: ANONYMOUS_HASHED_REMEMBER_ME_COOKIE_KEY=OGg1akNQYXEzcTU0SmxtYzoxMzg3MjExMzY5NjMxOmMyYTM5MzI3NGM1ODlhNDA0YmFiZDFmN2NhYjJjZmZj;
+  Expires=Sat, 01-Dec-2018 16:29:29 GMT; Path=/\r\nVary: Accept-Encoding\r\nContent-Encoding:
+  gzip\r\nContent-Length: 48\r\nContent-Type: application/json;charset=UTF-8\r\n\r\n"
+headers_hash: !ruby/hash:Typhoeus::Header
+  Date: Mon, 02 Dec 2013 16:29:29 GMT
+  Server: Apache/2.2.22 (Ubuntu)
+  Accept-Charset: utf-8
+  P3p: policyref="/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV TAI PSA PSD CON OUR IND
+    UNI PUR COM CNT"
+  Access-Control-Allow-Origin: '*'
+  Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+  Accept-Ranges: bytes
+  Set-Cookie:
+  - JSESSIONID=63C97D7E26894302DE042BD4996C3889.amiando; Path=/; Secure; HttpOnly
+  - JSESSIONID=63C97D7E26894302DE042BD4996C3889.amiando; Path=/
+  - ANONYMOUS_HASHED_REMEMBER_ME_COOKIE_KEY=OGg1akNQYXEzcTU0SmxtYzoxMzg3MjExMzY5NjMxOmMyYTM5MzI3NGM1ODlhNDA0YmFiZDFmN2NhYjJjZmZj;
+    Expires=Sat, 01-Dec-2018 16:29:29 GMT; Path=/
+  Vary: Accept-Encoding
+  Content-Encoding: gzip
+  Content-Length: '48'
+  Content-Type: application/json;charset=UTF-8
+http_version: 
+mock: false
+name_lookup_time: 0.056904
+pretransfer_time: 0.279547
+primary_ip: 213.61.176.214
+redirect_count: 0
+request: ":method => :post,\n\t:url => https://test.amiando.com/api/event/create?format=json&version=1&apikey=qjphdq7wWaGQRfjA2xmZAyekT9iehhS75q8DVhrMLsYaYTXlOE,\n\t:params
+  => {:hostId=>256615765, :title=>\"Secret title\", :country=>\"es\", :selectedDate=>\"1970-01-01T00:00:00Z\"}"
+requested_http_method: 
+requested_url: 
+start_time: 
+start_transfer_time: 0.977914
+status_message: Created
+time: 0.978514
