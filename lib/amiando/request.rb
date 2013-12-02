@@ -12,7 +12,7 @@ module Amiando
         params = default_params.merge(params || {})
       end
 
-      options = options.merge(:method => verb, :params => params, :verbose => Amiando.verbose, :timeout => Amiando.timeout)  
+      options = options.merge(:method => verb, :params => params, :verbose => Amiando.verbose, :timeout => Amiando.timeout)
       super(path, options)
     end
 
