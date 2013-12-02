@@ -24,7 +24,7 @@ module Amiando
   autoload :Payment,        'amiando/payment'
   autoload :PaymentType,    'amiando/payment_type'
   autoload :TicketType,     'amiando/ticket_type'
-  autoload :UserData,     'amiando/user_data'
+  autoload :UserData,       'amiando/user_data'
   autoload :Sync,           'amiando/sync'
 
   module Public
