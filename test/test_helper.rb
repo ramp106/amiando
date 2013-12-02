@@ -39,4 +39,6 @@ module Amiando
   end
 end
 
+Amiando.default_options = (Amiando.default_options || {}).merge(:disable_ssl_peer_verification => true)
+
 HydraCache.prefix = nil
