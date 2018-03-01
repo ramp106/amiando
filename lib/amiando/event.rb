@@ -107,6 +107,19 @@ module Amiando
 
       object
     end
+    
+    ##
+    # Return all payments for a particular event
+    #
+    # @param [Integer]  event id
+    #
+    # @return [Result] with an array of ids
+    def self.payments(id)
+      object = Result.new { |response_body| response_body['payments'] }
+      get object, "/api/event/#{id}/payments"
+
+      object
+    end
 
     ##
     # Find all events from a user

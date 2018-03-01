@@ -23,6 +23,9 @@ module Amiando
   autoload :PaymentType,    'amiando/payment_type'
   autoload :TicketType,     'amiando/ticket_type'
   autoload :Sync,           'amiando/sync'
+  
+  autoload :Ticket,         'amiando/ticket'
+  autoload :Payment,        'amiando/payment'
 
   module Public
     autoload :Event,        'amiando/public/event'
