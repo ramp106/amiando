@@ -64,8 +64,8 @@ module Amiando
     # Set default options for typhoeus
     attr_accessor :default_options
 
-    URL       = 'https://xing-events.com'
-    TEST_URL  = 'https://test.amiando.com'
+    URL       = 'https://www.xing-events.com'
+    TEST_URL  = 'https://test.xing-events.com'
 
     # Connect to the production server
     def production!
