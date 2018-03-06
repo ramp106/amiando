@@ -23,7 +23,7 @@ module Amiando
   autoload :PaymentType,    'amiando/payment_type'
   autoload :TicketType,     'amiando/ticket_type'
   autoload :Sync,           'amiando/sync'
-  
+
   autoload :Ticket,         'amiando/ticket'
   autoload :Payment,        'amiando/payment'
 
@@ -64,7 +64,7 @@ module Amiando
     # Set default options for typhoeus
     attr_accessor :default_options
 
-    URL       = 'https://www.amiando.com'
+    URL       = 'https://xing-events.com'
     TEST_URL  = 'https://test.amiando.com'
 
     # Connect to the production server
