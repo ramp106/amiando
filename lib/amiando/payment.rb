@@ -3,6 +3,9 @@ module Amiando
   ##
   # http://developers.amiando.com/index.php/REST_API_Payments
   class Payment < Resource
+    map :creation_time,            :creationTime,     :type => :time
+    map :last_modified,            :lastModified,     :type => :time
+
     ##
     # Fetch an payment
     #
@@ -15,7 +18,7 @@ module Amiando
 
       object
     end
-    
+
     ##
     # Return all tickets for a particular payment
     #
@@ -27,6 +30,12 @@ module Amiando
       get object, "/api/payment/#{id}/tickets"
 
       object
+    end
+
+    protected
+
+    def populate(response_body)
+      extract_attributes_from(response_body, 'payment')
     end
   end
 end
