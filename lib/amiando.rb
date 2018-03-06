@@ -64,6 +64,8 @@ module Amiando
     # Set default options for typhoeus
     attr_accessor :default_options
 
+    attr_accessor :max_concurrency
+
     URL       = 'https://www.xing-events.com'
     TEST_URL  = 'https://test.xing-events.com'
 
@@ -120,7 +122,7 @@ module Amiando
     private
 
     def hydra
-      @hydra ||= Typhoeus::Hydra.new
+      @hydra ||= Typhoeus::Hydra.new(max_concurrency: max_concurrency || 20)
     end
 
   end
