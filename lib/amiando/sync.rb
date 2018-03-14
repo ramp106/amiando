@@ -12,6 +12,24 @@ module Amiando
       @events, @next_id = events, next_id
     end
 
+    # Register an on server sync
+    #
+    #
+    def self.register
+      object = Result.new do |response_body, result|
+        if response_body["success"]
+          Sync.new(events, response_body['nextId'])
+        else
+          result.errors = response_body['errors']
+          false
+        end
+      end
+
+      get object, "v2/sync/register"
+
+      object
+    end
+
     ##
     # Get the latest 'synchronization' events. Let's not forget that in this
     # case an 'event' is something that happened. It could be, for instance,
@@ -42,7 +60,7 @@ module Amiando
         end
       end
 
-      get object, "api/sync/#{last_id}"
+      get object, "v2/sync/#{last_id}"
 
       object
     end
