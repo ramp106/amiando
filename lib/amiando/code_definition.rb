@@ -20,6 +20,35 @@ module Amiando
     end
 
     ##
+    # @param event_id
+    # @param [Symbol]
+    #   :ids if you only want to fetch the ids.
+    #   :full if you want the whole objects
+    #
+    # @return [Result] with all the code definition ids for this event.
+    def self.find_all_by_event_id(event_id, type = :ids)
+      object = Result.new do |response_body, result|
+        if response_body['success']
+          if type == :ids
+            response_body['codeDefinitions']
+          else
+            response_body['codeDefinitions'].map do |code_definition|
+              new(code_definition)
+            end
+          end
+        else
+          result.errors = response_body['errors']
+          false
+        end
+      end
+
+      get object, "/api/event/#{event_id}/codeDefinitions", :params => { :resultType => type }
+
+      object
+    end
+
+
+    ##
     # Search by code
     #
     # @param [Hash] a hash with 1 entry, either :identifier or :title

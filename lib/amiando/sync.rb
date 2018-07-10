@@ -25,7 +25,7 @@ module Amiando
         end
       end
 
-      get object, "v2/sync/register"
+      post object, "v2/sync/register"
 
       object
     end
