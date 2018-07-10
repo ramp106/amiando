@@ -26,6 +26,7 @@ module Amiando
 
   autoload :Ticket,         'amiando/ticket'
   autoload :Payment,        'amiando/payment'
+  autoload :CodeDefinition, 'amiando/code_definition'
 
   module Public
     autoload :Event,        'amiando/public/event'
