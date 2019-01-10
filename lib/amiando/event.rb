@@ -127,9 +127,9 @@ module Amiando
     # @param [Integer]  event id
     #
     # @return [Result] with an array of ids
-    def self.participants(id)
+    def self.participants(id, page)
       object = Result.new { |response_body| response_body['participants'] }
-      get object, "/api/event/#{id}/participants", :params => { :resultType => 'full' }
+      get object, "/api/event/#{id}/participants", :params => { :resultType => 'full' , :page => page}
 
       object
     end
