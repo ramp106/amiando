@@ -107,7 +107,7 @@ module Amiando
 
       object
     end
-    
+
     ##
     # Return all payments for a particular event
     #
@@ -117,6 +117,19 @@ module Amiando
     def self.payments(id)
       object = Result.new { |response_body| response_body['payments'] }
       get object, "/api/event/#{id}/payments"
+
+      object
+    end
+
+    ##
+    # Return all participants for a particular event
+    #
+    # @param [Integer]  event id
+    #
+    # @return [Result] with an array of ids
+    def self.participants(id)
+      object = Result.new { |response_body| response_body['participants'] }
+      get object, "/api/event/#{id}/participants"
 
       object
     end
