@@ -11,8 +11,6 @@ Gem::Specification.new do |s|
   s.summary     = %q{A ruby client for the amiando REST API}
   s.description = %q{A ruby client for the amiando REST API with parallel requests in mind}
 
-  s.rubyforge_project = "amiando"
-
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
